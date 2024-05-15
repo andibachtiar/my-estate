@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { FaSearch } from "react-icons/fa";
-import { Link, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const inputRef = useRef(null);
@@ -36,12 +36,14 @@ export default function Header() {
               Home
             </li>
           </Link>
-          <Link to="about">
+
+          <Link to="/about">
             <li className="hidden sm:inline text-slate-500 hover:underline hover:cursor-pointer hover:text-slate-700">
               About
             </li>
           </Link>
-          <Link to="sign-in">
+
+          <Link to="/sign-in">
             <li className="text-slate-500 hover:underline hover:cursor-pointer hover:text-slate-700">
               Sign In
             </li>
